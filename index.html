@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Pet Home</title>
+    <style>
+        .scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        html, body {
+          background-color: #dbdeed;
+          margin: 0;
+          padding: 0;
+        }
+        #navbar {
+            padding-bottom: 100px;
+        }
+        #left {
+            padding: 100px;
+        }
+        h1 {
+            margin-top: 0; 
+            margin-bottom: 20px; 
+            padding-right: 100px; 
+            padding-top: 80px;
+        }
+        #para {
+            margin-top: 0; 
+            padding-right: 100px; 
+            text-align: justify; 
+        }
+        #image-right {
+            width: 400px; 
+            height: 500px;
+            border-radius: 50%; 
+            border: 2px solid #333;
+            float: right;
+            margin-right: 20px;
+        }
+        #con{
+            background-color: burlywood;
+            margin: 50px;
+            font-size: 16px; 
+            margin: 4px 2px; 
+            cursor: pointer; 
+            border-radius: 10px;
+            padding: 10px;
+            size: 30px;
+            justify-content: space-between;
+        }
+        #dis{
+            background-color: wheat;
+            margin-left: 60px;
+            font-size: 16px; 
+            cursor: pointer; 
+            border-radius: 10px;
+            padding: 10px;
+            size: 30px;
+            justify-content: space-between;
+        }
+        
+        .bottom {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .bottom img {
+            width: 200px; 
+            height: 200px;
+            border-radius: 50%; 
+            border: 2px solid #333;
+        }
+        li{
+            list-style-type: none;
+        }
+        .foot{
+            background-color: white;
+            padding-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-md fixed-top">
+        <div class="container my-2">
+          <a href="/" class="navbar-brand text-dark font-weight-bold">
+            <i class="fas fa-paw"></i> Pet Home
+          </a>
+          <div class="collapse navbar-collapse flex-grow-0" id="collapseNav">
+            <div class="navbar-nav">
+              <a href="#" class="nav-item nav-link text-dark h6 mx-3 my-auto">Products</a>
+              <a href="#" class="nav-item nav-link text-dark h6 mx-3 my-auto">About</a>
+              <a href="#" class="nav-item nav-link text-dark h6 mx-3 my-auto">Category</a>
+              <a href="#" class="nav-item nav-link text-dark h6 mx-3 my-auto">Contact Us</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- Content -->
+    <div id="left">
+        <img src="https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cq_auto:eco%2Cw_1200/MTk3MjI5OTczMDA0NjI0OTc5/cute-pet-names.png" id="image-right" class="img-fluid" alt="Image">
+        <h1>We take care of your pets <br>with experts</h1>
+        <p id="para">We believe that your furry friend observes the very best. <br>That's why we offer a wide selection of premium pet products and <br>consultancy. Shop with us today and give your pet the care they deserve.</p>
+        <button id="con">Book an Appointment</button>
+        <button id="dis">Discover our services</button>
+        
+    </div>
+    <div class="bottom">
+        <img src="https://www.thesprucepets.com/thmb/PoUPzFs9QsAlT29s1PF9ZfxtvMg=/2562x0/filters:no_upscale():strip_icc()/labrabull-puppy-running-with-ball-in-mouth--730137499-5b9adae7c9e77c005062f7a6.jpg" alt="dog">
+        <img src="https://www.thesprucepets.com/thmb/wtjX_DK2jsq_amjYpKK8klsQPg4=/1975x0/filters:no_upscale():strip_icc()/GettyImages-597187685-58ad8e7a3df78c345b864b4f.jpg" alt="birds">
+        <img src="https://npr.brightspotcdn.com/dims4/default/d4c3df1/2147483647/strip/true/crop/1500x1125+0+0/resize/880x660!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fvpr%2Ffiles%2F201705%2Frabbits-istock-malerapaso-20170526.jpg" alt="rabbit">
+    </div>
+    <br>
+    <br>
+    <!--footer-->
+    <footer>
+        <div class="foot">
+            <div class="row">
+                <div class="col-12 col-md-4 py-3">
+                    <h5 class="text-info pb-3">Help center</h5>
+                    <ul>
+                        <li>Support Center</li>
+                        <li>Contact US</li>
+                    </ul>
+                    <h5 class="text-info pb-3">Resources</h5>
+                    <ul>
+                        <li>Become a Sitter</li>
+                        <li>Dog Sitting Guide</li>
+                        <li>Dog Products</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 py-3">
+                    <h5 class="text-info pb-3">Top Cities</h5>
+                    <ul>
+                        <li>Mumbai, Maharashtra</li>
+                        <li>Delhi, Delhi</li>    
+                        <li> Bangalore, Karnataka</li>   
+                        <li>Kolkata, West Bengal</li>    
+                        <li> Chennai, Tamil Nadu</li>  
+                        <li>Hyderabad, Telangana</li>    
+                        <li>Pune, Maharashtra</li>    
+                        <li>Ahmedabad, Gujarat</li>    
+                        <li>Jaipur, Rajasthan</li>    
+                        <li>Surat, Gujarat</li>    
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 py-3">
+                    <h5 class="text-info pb-3">More Links</h5>
+                    <ul>
+                        <a href="#">
+                            <i class="fab fa-linkedin h1 d-block"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fab fa-github h1 d-block"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fas fa-envelope h1 d-block"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </ul>
+                    <div class="text-muted py-3 text-center">
+                        <p>Copyright © PetHome</p>
+                    </div> 
+                    
+                </div>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
